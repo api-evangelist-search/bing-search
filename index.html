@@ -41,6 +41,8 @@ Just understanding what is possible.
      success:function(response){
          results = response.webPages.value;
 
+         var timeStamp = Math.floor(Date.now());
+         console.log(timeStamp);
          var saveFile = myDateSTring();
          saveFile = 'store/bing/' + saveFile + ".json";
          saveFile = encodeURI(saveFile);
