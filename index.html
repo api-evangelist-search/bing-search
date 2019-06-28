@@ -6,7 +6,7 @@ title: 'POC'
 <h1>Bing</h1>
 Just understanding what is possible.
 
-<table style="width: 100%;" id="results"></table>
+<ul style="width: 100%;" id="results"></ul>
 
 <script type="text/javascript">
 
@@ -27,15 +27,13 @@ Just understanding what is possible.
            var name = results[i].name;
            var url = results[i].url;
            var snippet = results[i].snippet;
-           var tr = document.createElement("tr");
-           var td = document.createElement("td");
+           var li = document.createElement("li");
            var a = document.createElement("a");
            a.setAttribute("href", url);
-           var t = document.createTextNode(name + ' - ' + snippet);
+           var t = document.createTextNode(name);
            a.appendChild(t);
-           td.appendChild(a);
-           tr.appendChild(td);
-           document.getElementById('results').appendChild(tr);
+           li.appendChild(a);
+           document.getElementById('results').appendChild(li);
          }
       },
       error: function(XMLHttpRequest, textStatus, errorThrown) {
