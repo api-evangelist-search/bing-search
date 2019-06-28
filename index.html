@@ -56,7 +56,7 @@ Just understanding what is possible.
 
          var response = $.ajax({
            url : 'https://api.github.com/v3/repos/' + org + '/' + repo + '/contents/' + saveFile,
-           type: 'POST',
+           type: 'post',
            dataType : "json",
            data: JSON.stringify(request),
            headers: {
