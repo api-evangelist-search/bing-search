@@ -42,6 +42,12 @@ Just understanding what is possible.
          results = response.webPages.value;
 
          var datetime = new Date().toLocaleString();
+         var datetime = datetime.replace(/\//g,'-');
+         datetime = datetime.replace(/:/g,'-');
+         datetime = datetime.replace(/,/g,'');
+         datetime = datetime.replace(/ /g,'-');
+         saveFile = datetime.toLowerCase();
+
          console.log(datetime);
          var saveFile = myDateSTring();
          saveFile = 'store/bing/' + saveFile + ".json";
