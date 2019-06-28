@@ -3,4 +3,28 @@ layout: page
 title: 'POC'
 ---
 
+<h1>Bing</h1>
 Just understanding what is possible.
+
+<script type="text/javascript">
+
+  var query = getUrlVar('query');
+  var token = getUrlVar('token');
+
+  url = 'https://api.cognitive.microsoft.com/bing/v7.0/search?q=' . query  . '&count=25';
+
+	var response = $.ajax({
+     url: url,
+     method: "get",
+     headers: {
+      'Ocp-Apim-Subscription-Key': token
+     },
+     success:function(response){
+         console.log(response);
+      },
+      error: function(XMLHttpRequest, textStatus, errorThrown) {
+          console.log("Status: " + textStatus); alert("Error: " + errorThrown);
+      }
+  });
+
+</script>
