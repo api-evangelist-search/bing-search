@@ -54,12 +54,14 @@ Just understanding what is possible.
          request['message'] = 'auto store';
          request['content'] = btoa(response);
 
-         jQuery.ajax({
+         $.ajax.ajax({
            url : 'https://api.github.com/v3/repos/' + org + '/' + repo + '/contents/' + saveFile,
            type: 'POST',
            dataType : "json",
            data: JSON.stringify(request),
-           beforeSend: function(xhr){xhr.setRequestHeader('Authorization:', 'token ' + githubToken);},
+           headers: {
+            'token': 'token ' + githubToken
+           },
          });
 
          for (i = 0; i < results.length; i++) {
