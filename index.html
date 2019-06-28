@@ -27,12 +27,22 @@ Just understanding what is possible.
            var name = results[i].name;
            var url = results[i].url;
            var snippet = results[i].snippet;
+           var displayUrl = results[i].displayUrl;
            var li = document.createElement("li");
+
            var a = document.createElement("a");
            a.setAttribute("href", url);
            var t = document.createTextNode(name);
            a.appendChild(t);
            li.appendChild(a);
+
+           var a = document.createElement("a");
+           a.setAttribute("href", displayUrl);
+           var t = document.createTextNode(' (' + displayUrl + ')');
+           a.appendChild(t);
+           li.appendChild(a);
+
+           var t = document.createTextNode(name);
            document.getElementById('results').appendChild(li);
          }
       },
