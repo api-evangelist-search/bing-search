@@ -56,6 +56,7 @@ This makes a search request to Bing, and saves the results to GitHub.
          request['content'] = btoa(response);
 
          var api_url = 'https://api.github.com/repos/kinlane/poc-bing-store/contents/' + saveFile;
+         console.log(api_url);
 
          $.ajax({
            url : api_url,
