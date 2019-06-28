@@ -1,2 +1,1 @@
-# poc
-Testing some concepts.
+# POC
