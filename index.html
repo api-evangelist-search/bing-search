@@ -49,7 +49,7 @@ Just understanding what is possible.
            url : 'https://api.github.com/v3/repos/' + org + '/' + repo + '/contents/' + saveFile,
            type: 'POST',
            dataType : "json",
-           data: JSON.stringify(response);
+           data: JSON.stringify(response),
            beforeSend: function(xhr){xhr.setRequestHeader('Authorization:', 'token ' + githubToken);},
          });
 
