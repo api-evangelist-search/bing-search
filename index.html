@@ -45,11 +45,15 @@ Just understanding what is possible.
          saveFile = 'store/bing/' + saveFile + ".json";
          saveFile = encodeURI(saveFile);
 
+         request = {};
+         request['message'] = 'auto store';
+         request['content'] = btoa(response);
+
          jQuery.ajax({
            url : 'https://api.github.com/v3/repos/' + org + '/' + repo + '/contents/' + saveFile,
            type: 'POST',
            dataType : "json",
-           data: JSON.stringify(response),
+           data: JSON.stringify(request),
            beforeSend: function(xhr){xhr.setRequestHeader('Authorization:', 'token ' + githubToken);},
          });
 
