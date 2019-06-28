@@ -49,7 +49,7 @@ This makes a search request to Bing, and saves the results to GitHub.
          datetime = datetime.replace(/ /g,'-');
 
          var saveFileName = datetime.toLowerCase();
-         var saveFile = 'store%2Fbing%2F' + saveFileName + ".json";
+         var saveFile = saveFileName + ".json";
 
          var request = {};
          request['message'] = 'auto store';
