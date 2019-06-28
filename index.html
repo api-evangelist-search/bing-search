@@ -46,11 +46,8 @@ Just understanding what is possible.
          datetime = datetime.replace(/:/g,'-');
          datetime = datetime.replace(/,/g,'');
          datetime = datetime.replace(/ /g,'-');
-         saveFile = datetime.toLowerCase();
-
-         console.log(datetime);
-         var saveFile = myDateSTring();
-         saveFile = 'store/bing/' + saveFile + ".json";
+         saveFileName = datetime.toLowerCase();
+         saveFile = 'store/bing/' + saveFileName + ".json";
          saveFile = encodeURI(saveFile);
 
          request = {};
