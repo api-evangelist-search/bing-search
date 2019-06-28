@@ -39,6 +39,7 @@ This makes a search request to Bing, and saves the results to GitHub.
       'Ocp-Apim-Subscription-Key': bingToken
      },
      success:function(response){
+       
          results = response.webPages.value;
 
          var datetime = new Date().toLocaleString();
