@@ -48,9 +48,7 @@ This makes a search request to Bing, and saves the results to GitHub.
          datetime = datetime.replace(/,/g,'');
          datetime = datetime.replace(/ /g,'-');
          saveFileName = datetime.toLowerCase();
-         saveFile = 'store/bing/' + saveFileName + ".json";
-         saveFile = saveFile.replace(/\//g,'%2F');
-
+         saveFile = 'store%2Fbing%2F' + saveFileName + ".json";
          request = {};
          request['message'] = 'auto store';
          request['content'] = btoa(response);
@@ -67,7 +65,7 @@ This makes a search request to Bing, and saves the results to GitHub.
          });
 
          for (i = 0; i < results.length; i++) {
-           
+
            var name = results[i].name;
            var url = results[i].url;
            var snippet = results[i].snippet;
