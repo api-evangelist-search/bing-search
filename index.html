@@ -10,6 +10,16 @@ Just understanding what is possible.
 
 <script type="text/javascript">
 
+  function getHostName(url) {
+      var match = url.match(/:\/\/(www[0-9]?\.)?(.[^/:]+)/i);
+      if (match != null && match.length > 2 && typeof match[2] === 'string' && match[2].length > 0) {
+      return match[2];
+      }
+      else {
+          return null;
+      }
+  }
+
   var query = getUrlVar('query');
   var token = getUrlVar('token');
 
@@ -28,6 +38,7 @@ Just understanding what is possible.
            var url = results[i].url;
            var snippet = results[i].snippet;
            var displayUrl = results[i].displayUrl;
+           displayUrl = getHostName(displayUrl);
            var li = document.createElement("li");
 
            var a = document.createElement("a");
