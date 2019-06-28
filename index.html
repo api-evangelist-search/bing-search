@@ -48,9 +48,8 @@ This makes a search request to Bing, and saves the results to GitHub.
          datetime = datetime.replace(/ /g,'-');
          saveFileName = datetime.toLowerCase();
          saveFile = 'store/bing/' + saveFileName + ".json";
-         saveFile = encodeURIComponent(saveFile);
-         datetime = datetime.replace(/\//g,'%2F');
-         datetime = datetime.replace(/./g,'%2E');
+         saveFile = saveFile.replace(/\//g,'%2F');
+         saveFile = saveFile.replace(/./g,'%2E');
 
          request = {};
          request['message'] = 'auto store';
