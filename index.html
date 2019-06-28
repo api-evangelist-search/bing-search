@@ -54,7 +54,7 @@ Just understanding what is possible.
          request['message'] = 'auto store';
          request['content'] = btoa(response);
 
-         $.ajax.ajax({
+         var response = $.ajax({
            url : 'https://api.github.com/v3/repos/' + org + '/' + repo + '/contents/' + saveFile,
            type: 'POST',
            dataType : "json",
