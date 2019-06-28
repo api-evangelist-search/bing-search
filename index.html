@@ -22,7 +22,6 @@ Just understanding what is possible.
       'Ocp-Apim-Subscription-Key': token
      },
      success:function(response){
-         //console.log(response);
          results = response.webPages.value;
          for (i = 0; i < results.length; i++) {
            var name = results[i].name;
@@ -40,7 +39,8 @@ Just understanding what is possible.
          }
       },
       error: function(XMLHttpRequest, textStatus, errorThrown) {
-          console.log("Status: " + textStatus); alert("Error: " + errorThrown);
+          console.log("Status: " + textStatus);
+          console.log("Error: " + errorThrown);
       }
   });
 
