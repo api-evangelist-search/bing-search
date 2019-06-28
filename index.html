@@ -39,7 +39,7 @@ This makes a search request to Bing, and saves the results to GitHub.
       'Ocp-Apim-Subscription-Key': bingToken
      },
      success:function(response){
-       
+
          results = response.webPages.value;
 
          var datetime = new Date().toLocaleString();
@@ -50,7 +50,6 @@ This makes a search request to Bing, and saves the results to GitHub.
          saveFileName = datetime.toLowerCase();
          saveFile = 'store/bing/' + saveFileName + ".json";
          saveFile = saveFile.replace(/\//g,'%2F');
-         saveFile = saveFile.replace(/./g,'%2E');
 
          request = {};
          request['message'] = 'auto store';
