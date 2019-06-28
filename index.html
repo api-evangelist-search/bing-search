@@ -58,7 +58,7 @@ This makes a search request to Bing, and saves the results to GitHub.
            url : 'https://api.github.com/v3/repos/' + org + '/' + repo + '/contents/' + saveFile,
            type: 'post',
            dataType : "json",
-           data: JSON.stringify(request),
+           data: request,
            headers: {
             'token': 'token ' + githubToken
            },
