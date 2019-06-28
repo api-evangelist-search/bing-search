@@ -42,13 +42,15 @@ This makes a search request to Bing, and saves the results to GitHub.
          results = response.webPages.value;
 
          var datetime = new Date().toLocaleString();
-         var datetime = datetime.replace(/\//g,'-');
+         datetime = datetime.replace(/\//g,'-');
          datetime = datetime.replace(/:/g,'-');
          datetime = datetime.replace(/,/g,'');
          datetime = datetime.replace(/ /g,'-');
          saveFileName = datetime.toLowerCase();
          saveFile = 'store/bing/' + saveFileName + ".json";
          saveFile = encodeURIComponent(saveFile);
+         datetime = datetime.replace(/\//g,'%2F');
+         datetime = datetime.replace(/./g,'%2E');
 
          request = {};
          request['message'] = 'auto store';
