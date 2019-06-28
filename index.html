@@ -11,7 +11,7 @@ Just understanding what is possible.
   var query = getUrlVar('query');
   var token = getUrlVar('token');
 
-  url = 'https://api.cognitive.microsoft.com/bing/v7.0/search?q=' . query  . '&count=25';
+  url = 'https://api.cognitive.microsoft.com/bing/v7.0/search?q=' + query  + '&count=25';
 
 	var response = $.ajax({
      url: url,
