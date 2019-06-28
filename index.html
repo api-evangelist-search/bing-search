@@ -6,6 +6,8 @@ title: 'POC'
 <h1>Bing</h1>
 Just understanding what is possible.
 
+<div style="width: 100%;" id="results"></div>
+
 <script type="text/javascript">
 
   var query = getUrlVar('query');
@@ -20,7 +22,8 @@ Just understanding what is possible.
       'Ocp-Apim-Subscription-Key': token
      },
      success:function(response){
-         console.log(response);
+         //console.log(response);
+         document.getElementById('results').innerHTML = JSON.stringify(response);
       },
       error: function(XMLHttpRequest, textStatus, errorThrown) {
           console.log("Status: " + textStatus); alert("Error: " + errorThrown);
