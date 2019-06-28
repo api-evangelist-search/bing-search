@@ -20,8 +20,15 @@ Just understanding what is possible.
       }
   }
 
+  function myDateSTring(){
+    return util.printd("yyyymmdd_HHMMss", new Date());
+  }
+
   var query = getUrlVar('query');
-  var token = getUrlVar('token');
+  var bingToken = getUrlVar('bingToken');
+  var githubToken = getUrlVar('githubToken');
+  var org = '{{ site.org }}';
+  var repo = '{{ site.repo }}';
 
   url = 'https://api.cognitive.microsoft.com/bing/v7.0/search?q=' + query  + '&count=25';
 
@@ -29,10 +36,23 @@ Just understanding what is possible.
      url: url,
      method: "get",
      headers: {
-      'Ocp-Apim-Subscription-Key': token
+      'Ocp-Apim-Subscription-Key': bingToken
      },
      success:function(response){
          results = response.webPages.value;
+
+         var saveFile = myDateSTring();
+         saveFile = 'store/bing/' + saveFile + ".json";
+         saveFile = encodeURI(saveFile);
+
+         jQuery.ajax({
+           url : 'https://api.github.com/v3/repos/' + org + '/' + repo + '/contents/' + saveFile,
+           type: 'POST',
+           dataType : "json",
+           data: JSON.stringify(response);
+           beforeSend: function(xhr){xhr.setRequestHeader('Authorization:', 'token ' + githubToken);},
+         });
+
          for (i = 0; i < results.length; i++) {
            var name = results[i].name;
            var url = results[i].url;
@@ -55,6 +75,7 @@ Just understanding what is possible.
 
            var t = document.createTextNode(name);
            document.getElementById('results').appendChild(li);
+
          }
       },
       error: function(XMLHttpRequest, textStatus, errorThrown) {
@@ -62,5 +83,7 @@ Just understanding what is possible.
           console.log("Error: " + errorThrown);
       }
   });
+
+
 
 </script>
