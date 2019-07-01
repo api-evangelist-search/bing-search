@@ -51,7 +51,7 @@ This makes a search request to Bing, and saves the results to GitHub.
          datetime = datetime.replace(/ /g,'-');
 
          var saveFileName = datetime.toLowerCase();
-         var saveFile = 'bing-' + saveFileName + ".yaml";
+         var saveFile = 'bing-' + query.replace(/\s+/g, '-').toLowerCase() + '-' + saveFileName + ".yaml";
 
          var request = {};
          request['message'] = 'storing bing search process';
