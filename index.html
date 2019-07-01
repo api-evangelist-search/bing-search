@@ -64,7 +64,7 @@ This makes a search request to Bing, and saves the results to GitHub.
 
          request['content'] = btoa(unescape(encodeURIComponent(response_yaml)))
 
-         var api_url = 'https://api.github.com/repos/api-evangelist-search/bing-search/contents/store%2F' + saveFile;
+         var api_url = 'https://api.github.com/repos/api-evangelist-search/bing-search/contents/store/' + saveFile;
 
          request = JSON.stringify(request);
 
