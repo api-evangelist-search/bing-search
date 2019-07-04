@@ -1,107 +1,108 @@
-- name: OpenAPI v3 support in Azure API Management
+- name: OpenAPI Specification | Swagger
+  url: 'https://swagger.io/specification/'
+  pull_url: 0
+  pull_domain: 0
+- name: Gmail API | Google Developers
+  url: 'https://developers.google.com/gmail/api/'
+  pull_url: 0
+  pull_domain: 0
+- name: Create an OpenAPI definition for a function with Azure API ...
   url: >-
-    https://feedback.azure.com/forums/248703-api-management/suggestions/34282282-openapi-v3-support-in-azure-api-management
+    https://docs.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition
   pull_url: 0
   pull_domain: 0
-- name: Open APIs - TM Forum
-  url: 'https://www.tmforum.org/open-apis/'
-  pull_url: 0
-  pull_domain: 0
-- name: OpenAPI extensions | Cloud Endpoints with OpenAPI | Google ...
-  url: 'https://cloud.google.com/endpoints/docs/openapi/openapi-extensions'
-  pull_url: 0
-  pull_domain: 0
-- name: Microsoft Announces Preview of OpenAPI Specification V3 in ...
-  url: 'https://www.infoq.com/news/2019/01/openapi-v3-support-azure-apim/'
-  pull_url: 0
-  pull_domain: 0
-- name: SendGrid Managing Their OpenAPI Using Github
+- name: Create a custom connector from an OpenAPI definition ...
   url: >-
-    https://apievangelist.com/2018/03/20/sendgrid-managing-their-openapi-using-github/
+    https://docs.microsoft.com/en-us/connectors/custom-connectors/define-openapi-definition
   pull_url: 0
   pull_domain: 0
-- name: Building APIs with Swagger and the OpenAPI Specification
+- name: Email Marketing API | Email API Integration | Open API ...
+  url: 'https://www.netatlantic.com/emailmarketing/openapi'
+  pull_url: 0
+  pull_domain: 0
+- name: Announcing the preview of OpenAPI Specification v3 support ...
   url: >-
-    https://www.lynda.com/REST-tutorials/Building-APIs-Swagger-OpenAPI-Specification/5019839-2.html
+    https://azure.microsoft.com/en-us/blog/announcing-the-preview-of-openapi-specification-v3-support-in-azure-api-management/
   pull_url: 0
   pull_domain: 0
-- name: Amazon API Gateway adds support for OpenAPI 3.0 API ...
+- name: OAI/OpenAPI-Specification - GitHub
+  url: 'https://github.com/OAI/OpenAPI-Specification/tree/master/examples/v3.0'
+  pull_url: 0
+  pull_domain: 0
+- name: 'OpenAPI 1.2 API: How To Use the API | RapidAPI'
+  url: 'https://rapidapi.com/transloc/api/openapi-1-2/details'
+  pull_url: 0
+  pull_domain: 0
+- name: OpenAPI-GUI v3.0.0 - GitHub Pages
+  url: 'https://mermade.github.io/openapi-gui/'
+  pull_url: 0
+  pull_domain: 0
+- name: About - OpenAPI Initiative
+  url: 'https://www.openapis.org/about'
+  pull_url: 0
+  pull_domain: 0
+- name: Tool up your API integration testing with OpenAPI | TechBeacon
   url: >-
-    https://aws.amazon.com/about-aws/whats-new/2018/09/amazon-api-gateway-adds-support-for-openapi-3-api-specification/
+    https://techbeacon.com/app-dev-testing/tool-your-api-integration-testing-openapi
   pull_url: 0
   pull_domain: 0
-- name: 'Building a Go Api: gRPC, Rest and OpenApi (swagger)'
+- name: Home - OpenAPI Initiative
+  url: 'https://www.openapis.org/'
+  pull_url: 0
+  pull_domain: 0
+- name: 'JSON API, OpenAPI and JSON Schema Working in Harmony ...'
   url: >-
-    https://blog.csnet.me/blog/building-a-go-api-grpc-rest-and-openapi-swagger.1/
+    https://apisyouwonthate.com/blog/json-api-openapi-and-json-schema-working-in-harmony/
   pull_url: 0
   pull_domain: 0
-- name: 'RepreZen and OpenAPI 3.0: Now is the Time'
-  url: 'https://www.reprezen.com/blog/reprezen-openapi-3.0-upgrade-now-is-the-time'
+- name: 'GitHub - microsoft/OpenAPI.NET: The OpenAPI.NET SDK ...'
+  url: 'https://github.com/Microsoft/OpenAPI.NET'
   pull_url: 0
   pull_domain: 0
-- name: Free Email API Service for Developers - Quick and Easy to ...
-  url: 'https://www.mailjet.com/email-api/'
+- name: The Best APIs are Built with Swagger Tools | Swagger
+  url: 'https://swagger.io/'
   pull_url: 0
   pull_domain: 0
-- name: Sending Email | Gmail API | Google Developers
-  url: 'https://developers.google.com/gmail/api/guides/sending'
+- name: API Overview | HubSpot API
+  url: 'https://developers.hubspot.com/docs/overview'
   pull_url: 0
   pull_domain: 0
-- name: What is open API (public API)? - Definition from WhatIs.com
-  url: 'https://searchmicroservices.techtarget.com/definition/open-API'
-  pull_url: 0
-  pull_domain: 0
-- name: Part 5 - Advanced Input And Output Modeling - API Handyman
+- name: Documenting .NET Web Services using OpenAPI (formally ...
   url: >-
-    https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-5-advanced-input-and-output-modeling/
+    https://blog.learningtree.com/documenting-net-web-services-using-openapi-formally-swagger-and-swashbuckle/
   pull_url: 0
   pull_domain: 0
-- name: Cloud Endpoints for OpenAPI - Google Cloud Platform
-  url: 'https://cloud.google.com/endpoints/docs/openapi/'
+- name: AnyAPI
+  url: 'https://any-api.com/'
   pull_url: 0
   pull_domain: 0
-- name: Using and extending Swagger.json (OpenApi) for API ...
+- name: Open API - Wikipedia
+  url: 'https://en.wikipedia.org/wiki/Open_API'
+  pull_url: 0
+  pull_domain: 0
+- name: Transactional Email API Service For Developers | Mailgun
+  url: 'https://www.mailgun.com/'
+  pull_url: 0
+  pull_domain: 0
+- name: 'Browse APIs - API tooling development: GraphQL, OpenAPI'
+  url: 'https://apis.guru/browse-apis/'
+  pull_url: 0
+  pull_domain: 0
+- name: How can I validate OpenAPI's Schema Object - Stack Overflow
   url: >-
-    https://samanthaneilen.github.io/2018/12/08/Using-and-extending-swagger.json-for-API-documentation.html
+    https://stackoverflow.com/questions/50644414/how-can-i-validate-openapis-schema-object
   pull_url: 0
   pull_domain: 0
-- name: Centurylink OpenAPI Services - Level 3 Communications
-  url: 'https://developer.level3.com/documentation'
+- name: Open API vz REST API - difference - Stack Overflow
+  url: 'https://stackoverflow.com/questions/48123867/open-api-vz-rest-api-difference'
   pull_url: 0
   pull_domain: 0
-- name: Redocly API Documentation Tool
-  url: 'https://redoc.ly/'
+- name: OpenAPI 3.0 tutorial overview | Documenting REST APIs
+  url: >-
+    https://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview.html
   pull_url: 0
   pull_domain: 0
-- name: SendGrid's Email API
-  url: 'https://sendgrid.com/solutions/email-api/'
-  pull_url: 0
-  pull_domain: 0
-- name: Publish your APIs | Apigee Docs
-  url: 'https://docs.apigee.com/api-platform/publish/portal/publish-apis'
-  pull_url: 0
-  pull_domain: 0
-- name: Using OpenAPI to Build Smart APIs for Dumb Machines
-  url: 'https://www.infoq.com/articles/openapi/'
-  pull_url: 0
-  pull_domain: 0
-- name: OpenAPI Specification Support | AlertSite Integration
-  url: 'https://smartbear.com/product/alertsite/integrations/openapi-specification/'
-  pull_url: 0
-  pull_domain: 0
-- name: Describing Streamdata.io Proxied APIs Using OpenAPI Or ...
-  url: 'https://apifriends.com/api-streaming/streamdataio-api-openapi-asyncapi/'
-  pull_url: 0
-  pull_domain: 0
-- name: A Sample OpenAPI 3.0 File to Get Started - DZone Integration
-  url: 'https://dzone.com/articles/a-sample-openapi-30-file-to-get-started'
-  pull_url: 0
-  pull_domain: 0
-- name: Yahoo Developer Network
-  url: 'https://developer.yahoo.com/'
-  pull_url: 0
-  pull_domain: 0
-- name: 'Testing an API using Swagger : Assertible'
-  url: 'https://assertible.com/blog/testing-an-api-using-swagger'
+- name: List of 10+ Email APIs - KongHQ - Kong API Gateway
+  url: 'https://konghq.com/blog/list-of-10-email-apis/'
   pull_url: 0
   pull_domain: 0
