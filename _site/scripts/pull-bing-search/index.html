@@ -109,6 +109,7 @@ This makes a search request to Bing API, and saves the results to the /store wit
 <script type="text/javascript">
 
   var query = getUrlVar('query');
+  var offset = getUrlVar('offset');
   var bingToken = getUrlVar('bingToken');
   var githubToken = getUrlVar('githubToken');
   var org = 'api-evangelist-search';
@@ -138,7 +139,7 @@ This makes a search request to Bing API, and saves the results to the /store wit
 
   function saveResults(store,sha){
 
-    url = 'https://api.cognitive.microsoft.com/bing/v7.0/search?q=' + query  + '&count=50';
+    url = 'https://api.cognitive.microsoft.com/bing/v7.0/search?q=' + query  + '&count=50&offset=' + offset;
 
     var response = $.ajax({
        url: url,
@@ -152,8 +153,12 @@ This makes a search request to Bing API, and saves the results to the /store wit
 
          var results = response.webPages.value;
 
-         for (i = 0; i < results.length; i++) {
+         //var results_yaml = jsyaml.dump(results);
+         //results_yaml = results_yaml.replace(' – ','');
+         //results = jsyaml.load(results_yaml);
 
+         for (i = 0; i < results.length; i++) {
+           console.log(results[i]);
            var name = results[i].name;
            var url = results[i].url;
            var snippet = results[i].snippet;
@@ -178,7 +183,7 @@ This makes a search request to Bing API, and saves the results to the /store wit
 
            var a = document.createElement("a");
            a.setAttribute("href", displayUrl);
-           var t = document.createTextNode(' (' + displayUrl + ')');
+           var t = document.createTextNode(' (' + displayUrl + ') (' + stored + ')');
            a.appendChild(t);
            li.appendChild(a);
 
