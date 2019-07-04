@@ -1,0 +1,208 @@
+---
+layout: page
+title: 'Pull Domains'
+---
+
+<h1>Pull Domains</h1>
+This pulls domains from the search results.
+
+<ul style="width: 100%;" id="results"></ul>
+
+<script type="text/javascript">
+
+  var query = getUrlVar('query');
+  var offset = getUrlVar('offset');
+  var bingToken = getUrlVar('bingToken');
+  var githubToken = getUrlVar('githubToken');
+  var org = '{{ site.org }}';
+  var repo = '{{ site.repo }}';
+
+  var saveFileName = query.replace(/\//g,'-');
+  saveFileName = saveFileName.replace(/:/g,'-');
+  saveFileName = saveFileName.replace(/,/g,'');
+  saveFileName = saveFileName.replace(/ /g,'-');
+  saveFileName = saveFileName.toLowerCase();
+
+  var saveFile = saveFileName + ".yaml";
+
+  function dynamicSort(property) {
+      var sortOrder = 1;
+
+      if(property[0] === "-") {
+          sortOrder = -1;
+          property = property.substr(1);
+      }
+
+      return function (a,b) {
+          if(sortOrder == -1){
+              return b[property].localeCompare(a[property]);
+          }else{
+              return a[property].localeCompare(b[property]);
+          }
+      }
+  }
+
+  function getHostName(url) {
+      var match = url.match(/:\/\/(www[0-9]?\.)?(.[^/:]+)/i);
+      if (match != null && match.length > 2 && typeof match[2] === 'string' && match[2].length > 0) {
+      return match[2];
+      }
+      else {
+          return null;
+      }
+  }
+
+ var api_url = 'https://api.github.com/repos/{{ site.org }}/domains/contents/store/domains.yaml';
+ //console.log(api_url);
+
+	var response = $.ajax({
+    url: api_url,
+    method: "get",
+    headers: {
+     'Authorization':'token ' + githubToken,
+     'Accept':'application/vnd.github.v3+json'
+    },
+    success:function(response){
+      //console.log(response);
+
+      var domain_content = response.content;
+      var domain_sha = response.sha;
+      domain_content = domain_content.replace(/\r\n/g, '');
+      domains = atob(domain_content);
+      domains = jsyaml.load(domains);
+      //console.log(domains);
+
+      var api_url_2 = 'https://api.github.com/repos/{{ site.org }}/{{ site.repo }}/contents/store/' + saveFile;
+      //console.log(api_url_2);
+
+     	var response2 = $.ajax({
+         url: api_url_2,
+         method: "get",
+         headers: {
+          'Authorization':'token ' + githubToken,
+          'Accept':'application/vnd.github.v3+json'
+         },
+         success:function(response2){
+           //console.log(response);
+
+           var content = response2.content;
+           var store_sha = response2.sha;
+           content = content.replace(/\r\n/g, '');
+           store = atob(content);
+           store = jsyaml.load(store);
+
+//           console.log(store);
+           for (i = 0; i < store.length; i++) {
+             //console.log(store[i]);
+
+             var stored = 0;
+             for (s = 0; s < domains.length; s++) {
+               var host_name = getHostName(store[i].url);
+               if(host_name == domains[s].domain){
+                 var stored = 1;
+               }
+             }
+
+           if(stored==0)
+            {
+            //console.log("ADD - "+host_name);
+            var d = {};
+            d['domain'] = host_name;
+            domains.push(d);
+            }
+
+           store[i].pull_domain = 1;
+
+           }
+
+           // Save Domains
+           domains.sort(dynamicSort("domain"));
+
+           response_yaml = jsyaml.dump(domains);
+           //console.log(response_yaml);
+
+           var request = {};
+           request['message'] = 'scripts/pull-domains';
+           console.log("sha2: " + store_sha);
+           request['sha'] = domain_sha;
+           var committer = {};
+           committer['name'] = 'Kin Lane';
+           committer['email'] = 'info@apievangelist.com';
+
+           request['author'] = committer;
+
+           request['content'] = btoa(unescape(encodeURIComponent(response_yaml)))
+
+           //console.log(JSON.stringify(request));
+
+           var api_url_4 = 'https://api.github.com/repos/{{ site.org }}/domains/contents/store/domains.yaml';
+
+           request = JSON.stringify(request);
+
+           //console.log(api_url);
+
+           //console.log(request);
+
+           $.ajax({
+             url : api_url_4,
+             type: 'PUT',
+             dataType : "json",
+             data: request,
+             headers: {
+              'Authorization':'token ' + githubToken,
+              'Accept':'application/vnd.github.v3+json'
+             },
+           });
+
+
+           response_yaml = jsyaml.dump(store);
+           //console.log(response_yaml);
+
+           var request = {};
+           request['message'] = 'scripts/pull-domains';
+           console.log("sha2: " + domain_sha);
+           request['sha'] = store_sha;
+           var committer = {};
+           committer['name'] = 'Kin Lane';
+           committer['email'] = 'info@apievangelist.com';
+
+           request['author'] = committer;
+
+           request['content'] = btoa(unescape(encodeURIComponent(response_yaml)))
+
+           //console.log(JSON.stringify(request));
+
+           var api_url_5 = 'https://api.github.com/repos/{{ site.org }}/{{ site.repo }}/contents/store/' + saveFile;
+
+           request = JSON.stringify(request);
+
+           //console.log(api_url);
+
+           //console.log(request);
+
+           $.ajax({
+             url : api_url_5,
+             type: 'PUT',
+             dataType : "json",
+             data: request,
+             headers: {
+              'Authorization':'token ' + githubToken,
+              'Accept':'application/vnd.github.v3+json'
+             },
+           });
+
+
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown) {
+
+        }
+      });
+
+   },
+   error: function(XMLHttpRequest, textStatus, errorThrown) {
+
+   }
+ });
+
+
+</script>
