@@ -158,8 +158,18 @@ This makes a search request to Bing API, and saves the results to the /store wit
          //results = jsyaml.load(results_yaml);
 
          for (i = 0; i < results.length; i++) {
-           console.log(results[i]);
+
+           //console.log(results[i]);
+
            var name = results[i].name;
+           name = name.replace(/[^ -~]+/g, "");
+           name = name.replace(' – ',' ');
+           name = name.replace(' - ','');
+           name = name.replace('...','');
+           name = name.replace(' | ',' ');
+           name = name.replace(': ',' ');
+           name = name.trim();
+
            var url = results[i].url;
            var snippet = results[i].snippet;
            var displayUrl = results[i].displayUrl;
@@ -203,12 +213,6 @@ This makes a search request to Bing API, and saves the results to the /store wit
          }
 
         var response_yaml = jsyaml.dump(relevant);
-        response_yaml = response_yaml.replace(/[^ -~]+/g, "");
-        response_yaml = response_yaml.replace(' – ',' ');
-
-        response_yaml = response_yaml.replace(' - ','');
-        response_yaml = response_yaml.replace('...','');
-        response_yaml = response_yaml.trim();
 
         var request = {};
         request['message'] = 'pull-bing-search';
