@@ -40,7 +40,7 @@ This makes a search request to Bing API, and saves the results to the /store wit
 
   function saveResults(store,sha){
 
-    url = 'https://api.cognitive.microsoft.com/bing/v7.0/search?q=' + query  + '&count=25';
+    url = 'https://api.cognitive.microsoft.com/bing/v7.0/search?q=' + query  + '&count=50';
 
     var response = $.ajax({
        url: url,
@@ -145,6 +145,7 @@ This makes a search request to Bing API, and saves the results to the /store wit
   });
 }
 
+  //var api_url = 'https://raw.githubusercontent.com/{{ site.org }}/{{ site.repo }}/master/store/' + saveFile;
   var api_url = 'https://api.github.com/repos/{{ site.org }}/{{ site.repo }}/contents/store/' + saveFile;
   //console.log(api_url);
 
