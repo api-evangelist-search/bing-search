@@ -1,0 +1,104 @@
+- name: OpenAPI Specification | Swagger
+  url: 'https://swagger.io/specification/'
+  pull_url: 0
+  pull_domain: 0
+- name: OpenAPITools/openapi-generator - github.com
+  url: 'https://github.com/OpenAPITools/openapi-generator'
+  pull_url: 0
+  pull_domain: 0
+- name: Create an OpenAPI definition for a function with Azure API ...
+  url: >-
+    https://docs.microsoft.com/en-us/azure/azure-functions/functions-openapi-definition
+  pull_url: 0
+  pull_domain: 0
+- name: Migrating from Swagger Codegen · OpenAPI Generator
+  url: 'https://openapi-generator.tech/docs/swagger-codegen-migration'
+  pull_url: 0
+  pull_domain: 0
+- name: OpenAPI.NET/docs/images at master · microsoft ... - GitHub
+  url: 'https://github.com/Microsoft/OpenAPI.NET/tree/master/docs/images'
+  pull_url: 0
+  pull_domain: 0
+- name: Online · OpenAPI Generator
+  url: 'https://openapi-generator.tech/docs/online'
+  pull_url: 0
+  pull_domain: 0
+- name: About Swagger Specification | Documentation | Swagger ...
+  url: 'https://swagger.io/docs/specification/about/'
+  pull_url: 0
+  pull_domain: 0
+- name: Publish your APIs | Apigee Docs
+  url: 'https://docs.apigee.com/api-platform/publish/portal/publish-apis'
+  pull_url: 0
+  pull_domain: 0
+- name: Part 8 - Splitting specification file - API Handyman
+  url: >-
+    https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-8-splitting-specification-file/
+  pull_url: 0
+  pull_domain: 0
+- name: A Sample OpenAPI/Swagger file for PowerApps ...
+  url: >-
+    http://www.cleverworkarounds.com/2017/11/13/a-sample-openapiswagger-file-for-powerapps/
+  pull_url: 0
+  pull_domain: 0
+- name: Why and when to use API keys | Cloud Endpoints with ...
+  url: 'https://cloud.google.com/endpoints/docs/openapi/when-why-api-key'
+  pull_url: 0
+  pull_domain: 0
+- name: Image API - Image API
+  url: 'https://www.imageapi.com/'
+  pull_url: 0
+  pull_domain: 0
+- name: NASA Open APIs
+  url: 'https://api.nasa.gov/'
+  pull_url: 0
+  pull_domain: 0
+- name: API Evangelist
+  url: 'https://apievangelist.com/'
+  pull_url: 0
+  pull_domain: 0
+- name: Flickr Services
+  url: 'https://www.flickr.com/services/api/'
+  pull_url: 0
+  pull_domain: 0
+- name: API Marketplace - Free Public & Open Rest APIs | RapidAPI
+  url: 'https://rapidapi.com/'
+  pull_url: 0
+  pull_domain: 0
+- name: Upload files | Drive REST API | Google Developers
+  url: 'https://developers.google.com/drive/api/v3/manage-uploads'
+  pull_url: 0
+  pull_domain: 0
+- name: Designing REST API with Open API Specification (OAS) v2.0 ...
+  url: >-
+    https://hackernoon.com/designing-rest-api-with-open-api-specification-oas-v2-0-v3-0-using-swagger-11dd4ef8cea6
+  pull_url: 0
+  pull_domain: 0
+- name: OpenAPI 3.0 tutorial overview | Documenting REST APIs
+  url: 'https://idratherbewriting.com/learnapidoc/pubapis_openapi_tutorial_overview'
+  pull_url: 0
+  pull_domain: 0
+- name: Generate Image Map for your diagram using Open API ...
+  url: 'https://knowhow.visual-paradigm.com/openapi/generate-image-map/'
+  pull_url: 0
+  pull_domain: 0
+- name: ImageResizer.io - Image CDN with Image Resize API
+  url: 'https://imageresizer.io/'
+  pull_url: 0
+  pull_domain: 0
+- name: Newest 'openapi' Questions - Stack Overflow
+  url: 'https://stackoverflow.com/questions/tagged/openapi'
+  pull_url: 0
+  pull_domain: 0
+- name: Free OCR API
+  url: 'https://ocr.space/ocrapi'
+  pull_url: 0
+  pull_domain: 0
+- name: Deploying the API backend | Cloud Endpoints with OpenAPI ...
+  url: 'https://cloud.google.com/endpoints/docs/openapi/deploy-api-backend'
+  pull_url: 0
+  pull_domain: 0
+- name: Blog - OpenAPI Initiative
+  url: 'https://www.openapis.org/blog'
+  pull_url: 0
+  pull_domain: 0
