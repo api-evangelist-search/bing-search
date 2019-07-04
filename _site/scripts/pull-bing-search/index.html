@@ -203,6 +203,12 @@ This makes a search request to Bing API, and saves the results to the /store wit
          }
 
         var response_yaml = jsyaml.dump(relevant);
+        response_yaml = response_yaml.replace(/[^ -~]+/g, "");
+        response_yaml = response_yaml.replace(' – ',' ');
+
+        response_yaml = response_yaml.replace(' - ','');
+        response_yaml = response_yaml.replace('...','');
+        response_yaml = response_yaml.trim();
 
         var request = {};
         request['message'] = 'pull-bing-search';
@@ -265,6 +271,14 @@ This makes a search request to Bing API, and saves the results to the /store wit
        var sha = response.sha;
        content = content.replace(/\r\n/g, '');
        store = atob(content);
+
+       store = store.replace(/[^ -~]+/g, "");
+       store = store.replace(' – ',' ');
+       store = store.replace(' - ',' ');
+       store = store.replace(' | ',' ');
+       store = store.replace(': ',' ');
+       store = store.replace(' | ',' ');
+
        store = jsyaml.load(store);
        saveResults(store,sha);
 

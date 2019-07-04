@@ -1,131 +1,13 @@
-- name: SendGrid Managing Their OpenAPI Using Github
-  url: >-
-    https://apievangelist.com/2018/03/20/sendgrid-managing-their-openapi-using-github/
-  pull_url: 0
-  pull_domain: 0
-- name: Building APIs with Swagger and the OpenAPI Specification
-  url: >-
-    https://www.lynda.com/REST-tutorials/Building-APIs-Swagger-OpenAPI-Specification/5019839-2.html
-  pull_url: 0
-  pull_domain: 0
-- name: Amazon API Gateway adds support for OpenAPI 3.0 API
-  url: >-
-    https://aws.amazon.com/about-aws/whats-new/2018/09/amazon-api-gateway-adds-support-for-openapi-3-api-specification/
-  pull_url: 0
-  pull_domain: 0
-- name: 'RepreZen and OpenAPI 3.0: Now is the Time'
-  url: 'https://www.reprezen.com/blog/reprezen-openapi-3.0-upgrade-now-is-the-time'
-  pull_url: 0
-  pull_domain: 0
-- name: Using and extending Swagger.json (OpenApi) for API
-  url: >-
-    https://samanthaneilen.github.io/2018/12/08/Using-and-extending-swagger.json-for-API-documentation.html
-  pull_url: 0
-  pull_domain: 0
-- name: Centurylink OpenAPI Services Level 3 Communications
-  url: 'https://developer.level3.com/documentation'
-  pull_url: 0
-  pull_domain: 0
-- name: 'Building a Go Api: gRPC, Rest and OpenApi (swagger)'
-  url: >-
-    https://blog.csnet.me/blog/building-a-go-api-grpc-rest-and-openapi-swagger.1/
-  pull_url: 0
-  pull_domain: 0
-- name: Redocly API Documentation Tool
-  url: 'https://redoc.ly/'
-  pull_url: 0
-  pull_domain: 0
-- name: Publish your APIs | Apigee Docs
-  url: 'https://docs.apigee.com/api-platform/publish/portal/publish-apis'
-  pull_url: 0
-  pull_domain: 0
-- name: Blog Archives OpenAPI Initiative
-  url: 'https://www.openapis.org/category/blog'
-  pull_url: 0
-  pull_domain: 0
-- name: Using OpenAPI to Build Smart APIs for Dumb Machines
-  url: 'https://www.infoq.com/articles/openapi/'
-  pull_url: 0
-  pull_domain: 0
-- name: OpenAPI Specification Support | AlertSite Integration
-  url: 'https://smartbear.com/product/alertsite/integrations/openapi-specification/'
-  pull_url: 0
-  pull_domain: 0
-- name: 'Testing an API using Swagger : Assertible'
-  url: 'https://assertible.com/blog/testing-an-api-using-swagger'
-  pull_url: 0
-  pull_domain: 0
-- name: What is open API (public API)? Definition from WhatIs.com
-  url: 'https://searchmicroservices.techtarget.com/definition/open-API'
-  pull_url: 0
-  pull_domain: 0
-- name: 'The Hypermedia APIs Support in JAX-RS and OpenAPI: a Long '
-  url: 'https://dzone.com/articles/the-hypermedia-apis-support-in-jax-rs-and-openapi'
-  pull_url: 0
-  pull_domain: 0
-- name: A Sample OpenAPI/Swagger file for PowerApps
-  url: >-
-    http://www.cleverworkarounds.com/2017/11/13/a-sample-openapiswagger-file-for-powerapps/
-  pull_url: 0
-  pull_domain: 0
-- name: Yahoo Developer Network
-  url: 'https://developer.yahoo.com/'
-  pull_url: 0
-  pull_domain: 0
-- name: Swagger API documentation in .NET Core 2.2 | TheCodeBuzz
-  url: 'https://thecodebuzz.com/swagger-api-documentation-in-net-core-2-2/'
-  pull_url: 0
-  pull_domain: 0
-- name: Documenting your API with OpenAPI (Swagger) and Redoc
-  url: >-
-    https://itnext.io/documenting-your-api-with-openapi-swagger-and-redoc-417bd8304b72
-  pull_url: 0
-  pull_domain: 0
-- name: Transactional Email from Mailchimp Mandrill
-  url: 'https://mandrill.com/'
-  pull_url: 0
-  pull_domain: 0
-- name: generators/java · OpenAPI Generator
-  url: 'https://openapi-generator.tech/docs/generators/java'
-  pull_url: 0
-  pull_domain: 0
-- name: Composing a REST API definition IBM
-  url: >-
-    https://www.ibm.com/support/knowledgecenter/en/SSFS6T/com.ibm.apic.toolkit.doc/task_apionprem_creating_apis.html
-  pull_url: 0
-  pull_domain: 0
-- name: 'Step 2: The info object (OpenAPI tutorial) | Documenting '
-  url: >-
-    https://idratherbewriting.com/learnapidoc/pubapis_openapi_step2_info_object.html
-  pull_url: 0
-  pull_domain: 0
-- name: OpenAPI Specification Wikipedia
-  url: 'https://en.wikipedia.org/wiki/OpenAPI_Specification'
-  pull_url: 0
-  pull_domain: 0
-- name: 'apigee | Google Cloud API Design, From A to Z'
-  url: 'https://pages.apigee.com/api-design-register.html'
-  pull_url: 0
-  pull_domain: 0
-- name: API EMR & Practice Management Software Vendors
+- name: APIEMR & Practice Management Software Vendors
   url: 'https://www.micromd.com/api/'
   pull_url: 0
   pull_domain: 0
-- name: Manage your specifications | Apigee Docs
-  url: 'https://docs.apigee.com/api-platform/publish/specs/manage-specs'
+- name: 'apigee | Google Cloud - API Design, From A to Z'
+  url: 'https://pages.apigee.com/api-design-register.html'
   pull_url: 0
   pull_domain: 0
-- name: Documenting an ASP.NET Core API with OpenAPI / Swagger
-  url: 'https://www.pluralsight.com/courses/aspdotnet-core-api-openapi-swagger'
-  pull_url: 0
-  pull_domain: 0
-- name: SendGrid Managing Their OpenAPI Using GitHub DZone
+- name: SendGrid Managing Their OpenAPI Using GitHub - DZone
   url: 'https://dzone.com/articles/sendgrid-managing-their-openapi-using-github'
-  pull_url: 0
-  pull_domain: 0
-- name: OpenAPI v3 support in Azure API Management | Azure updates
-  url: >-
-    https://azure.microsoft.com/en-us/updates/openapi-v3-support-in-azure-api-management/
   pull_url: 0
   pull_domain: 0
 - name: 'Programming with Java APIs, Part 1: OpenAPI and Swagger '
@@ -133,23 +15,31 @@
     https://www.javaworld.com/article/3199351/api-driven-development-with-openapi-and-swagger.html
   pull_url: 0
   pull_domain: 0
-- name: Generate Spring Boot REST API using Swagger/OpenAPI 47
+- name: Documenting an ASP.NET Core API with OpenAPI / Swagger
+  url: 'https://www.pluralsight.com/courses/aspdotnet-core-api-openapi-swagger'
+  pull_url: 0
+  pull_domain: 0
+- name: Generate Spring Boot REST API using Swagger/OpenAPI – 47
   url: >-
     https://www.47northlabs.com/knowledge-base/generate-spring-boot-rest-api-using-swagger-openapi/
   pull_url: 0
   pull_domain: 0
-- name: API Development with Swagger Developer.com
+- name: Manage your specifications | Apigee Docs
+  url: 'https://docs.apigee.com/api-platform/publish/specs/manage-specs'
+  pull_url: 0
+  pull_domain: 0
+- name: API Development with Swagger - Developer.com
   url: 'https://www.developer.com/java/data/api-development-with-swagger.html'
   pull_url: 0
   pull_domain: 0
-- name: API Launch Announcement from DevNet Create Cisco Meraki Blog
+- name: OpenAPI v3 support in Azure API Management | Azure updates
   url: >-
-    https://meraki.cisco.com/blog/2019/04/api-launch-announcement-from-devnet-create/
+    https://azure.microsoft.com/en-us/updates/openapi-v3-support-in-azure-api-management/
   pull_url: 0
   pull_domain: 0
-- name: OpenAPI Spec (Swagger Spec) Generator Online tool to
+- name: API Launch Announcement from DevNet Create - Cisco Meraki Blog
   url: >-
-    https://community.apigee.com/articles/25770/openapi-spec-swagger-spec-generator-online-tool-to.html
+    https://meraki.cisco.com/blog/2019/04/api-launch-announcement-from-devnet-create/
   pull_url: 0
   pull_domain: 0
 - name: Create swagger api endpoint for Azure functions
@@ -157,17 +47,18 @@
     https://ratsubsharewall.blogspot.com/2017/12/create-swagger-api-endpoint-for-azure.html
   pull_url: 0
   pull_domain: 0
-- name: OpenFEC API Documentation
-  url: 'https://api.open.fec.gov/developers/'
-  pull_url: 0
-  pull_domain: 0
-- name: Writing OpenAPI (Swagger) Specification Tutorial Part 7
+- name: Writing OpenAPI (Swagger) Specification Tutorial - Part 7
   url: >-
     https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-7-documentation/
   pull_url: 0
   pull_domain: 0
-- name: Building APIs with OpenAPI Ratros Y. Medium
+- name: Building APIs with OpenAPI – Ratros Y. – Medium
   url: 'https://medium.com/@ratrosy/building-apis-with-openapi-ac3c24e33ee3'
+  pull_url: 0
+  pull_domain: 0
+- name: OpenAPI Spec (Swagger Spec) Generator - Online tool to
+  url: >-
+    https://community.apigee.com/articles/25770/openapi-spec-swagger-spec-generator-online-tool-to.html
   pull_url: 0
   pull_domain: 0
 - name: How to use IBM App Connect with APIs imported from OpenAPI
@@ -175,15 +66,19 @@
     https://developer.ibm.com/integration/docs/app-connect/how-to-guides-for-apps/use-ibm-app-connect-openapi/
   pull_url: 0
   pull_domain: 0
-- name: docs.waiverforever.com WavierForever Open API v1.0.0
+- name: docs.waiverforever.com - WavierForever Open API v1.0.0
   url: 'https://docs.waiverforever.com/'
   pull_url: 0
   pull_domain: 0
-- name: Open API ServiceStack
+- name: OpenFEC API Documentation
+  url: 'https://api.open.fec.gov/developers/'
+  pull_url: 0
+  pull_domain: 0
+- name: Open API - ServiceStack
   url: 'https://docs.servicestack.net/openapi'
   pull_url: 0
   pull_domain: 0
-- name: Part 6 Defining Security API Handyman
+- name: Part 6 - Defining Security - API Handyman
   url: >-
     https://apihandyman.io/writing-openapi-swagger-specification-tutorial-part-6-defining-security/
   pull_url: 0
@@ -196,15 +91,15 @@
   url: 'https://buildazure.com/2017/10/20/swagger-is-now-the-openapi-specification/'
   pull_url: 0
   pull_domain: 0
-- name: Open API Manifesto TM Forum
+- name: Open API Manifesto - TM Forum
   url: 'https://www.tmforum.org/open-apis/open-api-manifesto/'
   pull_url: 0
   pull_domain: 0
-- name: Introducing Swagger UI on Azure Functions DevKimchi
+- name: Introducing Swagger UI on Azure Functions – DevKimchi
   url: 'https://devkimchi.com/2019/02/02/introducing-swagger-ui-on-azure-functions/'
   pull_url: 0
   pull_domain: 0
-- name: All API documentation developer.ebay.com
+- name: All API documentation - developer.ebay.com
   url: 'https://developer.ebay.com/docs'
   pull_url: 0
   pull_domain: 0
@@ -212,7 +107,110 @@
   url: 'https://www.reprezen.com/'
   pull_url: 0
   pull_domain: 0
-- name: SMTP Web API for email delivery SMTP.com
+- name: SMTP Web API for email delivery - SMTP.com
   url: 'https://www.smtp.com/developers/smtp-api/'
+  pull_url: 0
+  pull_domain: 0
+- name: 'Build, Collaborate & Integrate APIs | SwaggerHub'
+  url: 'https://app.swaggerhub.com/'
+  pull_url: 0
+  pull_domain: 0
+- name: 'Building APIs with OpenAPI: Continued – Ratros Y. – Medium'
+  url: >-
+    https://medium.com/@ratrosy/building-apis-with-openapi-continued-5d0faaed32eb
+  pull_url: 0
+  pull_domain: 0
+- name: Comparing OpenAPI with gRPC – Red Hat Services Speak
+  url: 'https://servicesblog.redhat.com/2019/01/31/comparing-openapi-with-grpc/'
+  pull_url: 0
+  pull_domain: 0
+- name: Microsoft Graph - Home
+  url: 'https://developer.microsoft.com/en-us/graph/'
+  pull_url: 0
+  pull_domain: 0
+- name: OpenAPI code generators for Visual Studio | endjin blog
+  url: 'https://blogs.endjin.com/2018/04/openapi-code-generators-for-visual-studio/'
+  pull_url: 0
+  pull_domain: 0
+- name: OpenAPI Enumerators Add Dimensions To Each API Call
+  url: >-
+    https://apifriends.com/api-streaming/openapi-enumerators-add-dimensions-api-call/
+  pull_url: 0
+  pull_domain: 0
+- name: 'REST API Design: Filtering, Sorting, and Pagination '
+  url: >-
+    https://www.moesif.com/blog/technical/api-design/REST-API-Design-Filtering-Sorting-and-Pagination/
+  pull_url: 0
+  pull_domain: 0
+- name: API Marketplace - Free Public & Open Rest APIs | RapidAPI
+  url: 'https://rapidapi.com/'
+  pull_url: 0
+  pull_domain: 0
+- name: Our API Specification Workflow – WeWork Technology
+  url: 'https://engineering.wework.com/our-api-specification-workflow-9337448d6ee6'
+  pull_url: 0
+  pull_domain: 0
+- name: Modelling OpenAPI - Swagger 2.0 Specification using API
+  url: >-
+    https://www.ibm.com/cloud/blog/modelling-openapi-swagger-2-0-specification-using-api-connect
+  pull_url: 0
+  pull_domain: 0
+- name: Streamdata.io Documentation
+  url: 'https://streamdataio.github.io/streamdataio-docker/'
+  pull_url: 0
+  pull_domain: 0
+- name: how to use mailGun API - YouTube
+  url: 'https://www.youtube.com/watch?v=MBWYn7M4yFg'
+  pull_url: 0
+  pull_domain: 0
+- name: RESTful APIs and Swagger (OpenAPI) in Azure Functions
+  url: 'https://anthonychu.ca/post/restful-apis-swagger-openapi-azure-functions/'
+  pull_url: 0
+  pull_domain: 0
+- name: Describe Your API With OpenAPI | recallact.com
+  url: 'https://www.recallact.com/presentation/describe-your-api-openapi'
+  pull_url: 0
+  pull_domain: 0
+- name: D&B Direct+ Documentation
+  url: 'https://directplus.documentation.dnb.com/openAPI.html?apiID=IDRExtendedMatch'
+  pull_url: 0
+  pull_domain: 0
+- name: New Open Source Project – VMware OpenAPI Generator
+  url: 'https://blogs.vmware.com/code/2018/12/07/new-vmware-openapi-generator/'
+  pull_url: 0
+  pull_domain: 0
+- name: It's Time For Every API to Have an OpenAPI Spec
+  url: >-
+    https://www.programmableweb.com/news/its-time-every-api-to-have-openapi-spec/sponsored-content/2018/12/19
+  pull_url: 0
+  pull_domain: 0
+- name: Sports Data OpenAPI | Fantasy Sports API Swagger Files
+  url: 'https://sportsdata.io/developers/sports-data-open-api-swagger-files'
+  pull_url: 0
+  pull_domain: 0
+- name: 'Mojolicious, OpenAPI - and GraphQL - mojolicious.io'
+  url: 'https://mojolicious.io/blog/2018/03/18/graphql-openapi/index.html'
+  pull_url: 0
+  pull_domain: 0
+- name: 'Custom Connector, Microsoft (Graph) OpenAPI (2/3 '
+  url: >-
+    https://powerusers.microsoft.com/t5/General-Discussion/Custom-Connector-Microsoft-Graph-OpenAPI-2-3-Extension-for/td-p/140493
+  pull_url: 0
+  pull_domain: 0
+- name: GitHub API v3 | GitHub Developer Guide
+  url: 'https://developer.github.com/v3/'
+  pull_url: 0
+  pull_domain: 0
+- name: OData to OpenAPI Mapping Version 1.0 - OASIS
+  url: >-
+    http://docs.oasis-open.org/odata/odata-openapi/v1.0/cnprd01/odata-openapi-v1.0-cnprd01.html
+  pull_url: 0
+  pull_domain: 0
+- name: NASA Open APIs - NASA API Listing
+  url: 'https://api.nasa.gov/'
+  pull_url: 0
+  pull_domain: 0
+- name: Groups Service API v3 - IAM - UW-IT Wiki
+  url: 'https://wiki.cac.washington.edu/display/infra/Groups+Service+API+v3'
   pull_url: 0
   pull_domain: 0
